@@ -9,7 +9,7 @@ export class ProductController {
         const products = {
 
             listProducts: [
-                { id: 1, image: '', name: 'iPhone', value: 5000.00, category: 'eletronic' },
+                { id: 1, image: 'http://localhost:8000/iphone.jpg', name: 'iPhone', value: 5000.00, category: 'eletronic' },
                 { id: 2, image: '', name: 'Xadrez', value: 5000.00, category: 'toy' },
                 { id: 3, image: '', name: 'Dama', value: 5000.00, category: 'toy' },
                 { id: 4, image: '', name: 'Freio', value: 5000.00, category: 'car' },
