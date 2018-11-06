@@ -9,5 +9,9 @@ export class ProductRouter {
         app.route('/products')
             .get((req: Request, res: Response) =>
                 this.productCtrl.getAll(req, res));
+
+        app.route('/products/:id')
+            .get((req: Request, res: Response) =>
+                this.productCtrl.getById(req, res))
     }
 }

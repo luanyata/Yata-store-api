@@ -26,4 +26,14 @@ export class ProductController {
 
         res.json(data).status(200);
     }
+
+    public getById(req: Request, res: Response) {
+
+        console.log('id', req.params);
+
+        const product = { id: 1, image: 'http://localhost:8000/iphone.jpg', name: 'iPhone', value: 5000.00, category: 'eletronic', description: 'Caro pra caralho' };
+
+
+        res.json(product).status(200);
+    }
 }
